@@ -1,0 +1,42 @@
+/* Themed colors */
+
+:root, html[data-theme="dark"] {
+    --top-bg-color: hsl(230, 17%, 14%);
+    --bg-color: hsl(232, 19%, 15%);
+    --cards-bg-color: hsl(228, 28%, 20%);
+    --cargs-bg-hover-color: hsl(217, 24%, 34%);
+    --txt-color-one: hsl(0, 0%, 100%);
+    --txt-color-two: hsl(228, 34%, 66%);
+    --toggle-gradient-color-one: hsl(210, 78%, 56%);
+    --toggle-gradient-color-two: hsl(146, 68%, 55%);
+    --toggle-btn-color: hsl(232, 19%, 15%);
+ }
+
+ html[data-theme="light"] {
+    --top-bg-color: hsl(225, 100%, 98%);
+    --bg-color: hsl(0, 0%, 100%);
+    --cards-bg-color: hsl(227, 47%, 96%);
+    --cargs-bg-hover-color: hsl(217, 35%, 85%);
+    --txt-color-one: hsl(230, 17%, 14%) ;
+    --txt-color-two: hsl(228, 12%, 44%);
+    --toggle-gradient-color-one: hsl(230, 22%, 74%);
+    --toggle-gradient-color-two: hsl(230, 22%, 74%);
+    --toggle-btn-color: hsl(225, 100%, 98%);
+ }
+
+
+/* Colors unrelated to the theme */
+body {
+    --line-facebook-box: hsl(208, 92%, 53%);
+    --line-twitter-box: hsl(203, 89%, 53%);
+    --line-insta-box-color-one: hsl(37, 97%, 70%);
+    --line-insta-box-color-two: hsl(329, 70%, 58%) ;
+    --line-yt-box: hsl(348, 97%, 39%);
+    --up-txt-color: hsl(163, 72%, 41%);
+    --down-txt-color: hsl(356, 69%, 56%);
+    /* Typography */
+    --font: Inter;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+}
+

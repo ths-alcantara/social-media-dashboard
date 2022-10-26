@@ -1,0 +1,229 @@
+@charset "UTF-8";
+@import url("variables.css");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  background: linear-gradient(0deg, var(--top-bg-color) 65%, var(--bg-color) 35%);
+  margin: 60px 200px;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+#name {
+  color: var(--txt-color-one);
+}
+
+#total-followers {
+  color: var(--txt-color-two);
+  font-weight: var(--font-weight-700);
+}
+
+#theme {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  color: var(--txt-color-one);
+  font-weight: var(--font-weight-700);
+}
+
+#theme-txt {
+  margin-top: 5px;
+}
+
+#toggle {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, var(--toggle-gradient-color-one) 20%, var(--toggle-gradient-color-two));
+  width: 60px;
+  height: 30px;
+  margin: 1px 1px;
+}
+
+input {
+  height: 26px;
+  width: 26px;
+  appearance: none;
+  border-radius: 100%;
+  opacity: 0;
+  background-color: var(--toggle-btn-color);
+}
+
+#one {
+  opacity: 1;
+}
+
+#followers {
+  margin-top: 50px;
+  display: flex;
+}
+
+.followers-boxes {
+  flex-grow: 1;
+  background-color: var(--cards-bg-color);
+  max-width: 340px;
+  min-width: 200px;
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+  margin: 16px;
+}
+.followers-boxes:hover {
+  background-color: var(--cargs-bg-hover-color);
+}
+.followers-boxes .color-line-fb {
+  background-color: var(--line-facebook-box) ;
+  width: 100%;
+  height: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.followers-boxes .color-line-tt {
+  background-color: var(--line-twitter-box);
+  width: 100%;
+  height: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.followers-boxes .color-line-insta {
+  background: linear-gradient(90deg, var(--line-insta-box-color-one) 20%, var(--line-insta-box-color-two) 60%);
+  width: 100%;
+  height: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.followers-boxes .color-line-yt {
+  background-color: var(--line-yt-box);
+  width: 100%;
+  height: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.followers-boxes .user {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  height: 30px;
+}
+.followers-boxes .user .user-name {
+  margin-left: 20px;
+  margin-top: 4px;
+  color: var(--txt-color-two);
+  font-weight: var(--font-weight-700);
+}
+.followers-boxes .num-followers {
+  text-align: center;
+  color: var(--txt-color-one);
+  font-size: 50px;
+  font-weight: var(--font-weight-700);
+  margin-top: 25px;
+}
+.followers-boxes .txt-followers {
+  text-align: center;
+  color: var(--txt-color-two);
+  letter-spacing: 4px;
+  font-size: 15px;
+  margin-top: 5px;
+}
+.followers-boxes .followers-today {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.followers-boxes .followers-today .up-down {
+  width: 15px;
+  height: 10px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.followers-boxes .followers-today .num-today {
+  font-weight: var(--font-weight-700);
+}
+.followers-boxes .followers-today .green {
+  color: var(--up-txt-color);
+}
+.followers-boxes .followers-today .red {
+  color: var(--down-txt-color);
+}
+
+h2 {
+  color: var(--txt-color-one);
+  margin: 20px;
+  font-size: 30px;
+}
+
+#overview-infos {
+  height: 368px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#overview-infos .overview-boxes {
+  flex-grow: 1;
+  background-color: var(--cards-bg-color);
+  max-width: 340px;
+  min-width: 250px;
+  width: 100%;
+  height: 144px;
+  border-radius: 6px;
+  margin: 16px;
+}
+#overview-infos .overview-boxes:hover {
+  background-color: var(--cargs-bg-hover-color);
+}
+#overview-infos .overview-boxes .interactions {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  height: 30px;
+  color:  var(--txt-color-two);
+  font-size: 18px;
+  font-weight: var(--font-weight-700);
+}
+#overview-infos .overview-boxes .num-interactions {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+#overview-infos .overview-boxes .num-interactions .total-from-percentage {
+  color: var(--txt-color-one);
+  font-size: 30px;
+  font-weight: var(--font-weight-700);
+}
+#overview-infos .overview-boxes .num-interactions .percentage {
+  display: flex;
+  height: 15px;
+  margin-top: 8px;
+  font-weight: var(--font-weight-700);
+  font-size: 12px;
+}
+#overview-infos .overview-boxes .num-interactions .percentage .up-down-percentage {
+  height: 5px;
+  margin: 8px;
+}
+#overview-infos .overview-boxes .num-interactions .percentage .up-percentage {
+  color: var(--up-txt-color);
+  margin: 3px;
+}
+#overview-infos .overview-boxes .num-interactions .percentage .down-percentage {
+  color: var(--down-txt-color);
+  margin: 3px;
+}
+
+#attribution {
+  text-align: center;
+  width: 100%;
+  margin-top: 5px;
+
+}
+
