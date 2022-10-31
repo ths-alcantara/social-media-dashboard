@@ -1,7 +1,7 @@
 
 # Social Media Dashboard
 
-Projeto desenvolvido a partir de um desfio do Frontend Mentor para desenvolver a aplicar
+Projeto desenvolvido a partir de um desafio do Frontend Mentor para desenvolver a aplicar
 meus conhecimentos.
 
 
